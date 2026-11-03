@@ -39,6 +39,39 @@ section{max-width:1160px;margin:auto;padding:65px 22px}.section-head{text-align:
 footer{border-top:1px solid var(--line);background:#100d18;padding:35px 22px;color:var(--muted)}.foot{max-width:1160px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:12px}
 .modal-back{display:none;position:fixed;inset:0;background:#000b;z-index:30;align-items:center;justify-content:center;padding:18px}.modal-back.show{display:flex}.modal{width:min(520px,100%);background:#1a1424;border:1px solid #594831;border-radius:22px;padding:24px;max-height:90vh;overflow:auto}.modal h2{margin:0 0 8px}.modal p{color:var(--muted);font-size:13px}.close{float:right;background:transparent;color:white;border:0;font-size:24px}.field{display:grid;gap:6px;margin:12px 0}.field label{font-size:12px;color:#d8cfdf}.field input,.field textarea,.field select{width:100%;background:#100d18;border:1px solid var(--line);border-radius:10px;padding:12px;color:white}.cart-line{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding:12px 0}.total{display:flex;justify-content:space-between;font-weight:900;font-size:19px;margin:18px 0}.small{font-size:11px!important;color:#a99fb3!important}
 @media(max-width:760px){nav{display:none}.hero{grid-template-columns:1fr;padding-top:50px}.hero-art{min-height:280px}.cards{grid-template-columns:1fr}.card-art{height:165px}.how{grid-template-columns:1fr}.promise{grid-template-columns:1fr}.nav{padding:13px 16px}section{padding:48px 17px}.hero{padding-left:17px;padding-right:17px}}
+  /* SPINIX LUXURY BOX ENHANCEMENT */
+.card {
+  position: relative;
+  box-shadow:
+    0 15px 35px rgba(0,0,0,.55),
+    inset 0 1px 0 rgba(255,255,255,.08);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.card:hover {
+  transform: translateY(-7px);
+  border-color: var(--gold);
+  box-shadow:
+    0 22px 45px rgba(0,0,0,.7),
+    0 0 22px rgba(212,175,55,.18);
+}
+
+.card-art {
+  box-shadow: inset 0 0 35px rgba(212,175,55,.12);
+}
+
+.card:nth-child(1) {
+  border-top: 2px solid #b78b43;
+}
+
+.card:nth-child(2) {
+  border-top: 2px solid #f4d58a;
+  box-shadow: 0 15px 35px rgba(212,175,55,.16);
+}
+
+.card:nth-child(3) {
+  border-top: 2px solid #d6ad55;
+}  
 </style>
 </head>
 <body>
